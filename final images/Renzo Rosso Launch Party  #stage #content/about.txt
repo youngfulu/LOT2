@@ -1,0 +1,10 @@
+name: (Be Brave)
+#
+Project type: (Set design, Video production)
+year: (2026)
+Location: Vinece, Italy
+Client: (Diesel)
+Agency:(Villa Eugenie)
+Status: (finished)
+Contributor: Alinna Tikhonova, Ilya Duganov
+

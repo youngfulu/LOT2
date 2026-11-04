@@ -20,6 +20,7 @@ function deriveTags(name) {
   if (n.includes('#instal') || n.includes('#installation')) tags.push('installation');
   if (n.includes('#concept')) tags.push('concept');
   if (n.includes('#tech')) tags.push('tech');
+  if (n.includes('#content')) tags.push('content');
   if (n.includes('#spatial')) tags.push('spatial');
   return tags;
 }

@@ -243,6 +243,7 @@ const CATEGORY_LABELS = {
   stage: 'Stage design',
   installation: 'Installation',
   tech: 'Technical solutions',
+  content: 'Video content',
   concept: 'Concepts',
   spatial: 'Spatial design',
 };

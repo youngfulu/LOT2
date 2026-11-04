@@ -517,6 +517,29 @@
       "indexImage": "0000 (v1~recovered)dg.png"
     },
     {
+      "path": "Renzo Rosso Launch Party  #stage #content",
+      "name": "Renzo Rosso Launch Party",
+      "rawName": "Renzo Rosso Launch Party  #stage #content",
+      "images": [
+        "a1.jpg",
+        "a2.jpg",
+        "a3.jpg",
+        "a4.jpg",
+        "b2.jpg",
+        "b8.jpg"
+      ],
+      "hasAbout": true,
+      "hasMore": true,
+      "tags": [
+        "stage",
+        "content"
+      ],
+      "location": "Vinece, Italy",
+      "city": "Vinece",
+      "year": "2026",
+      "indexImage": "a1.jpg"
+    },
+    {
       "path": "set design ",
       "name": "set design",
       "rawName": "set design ",
