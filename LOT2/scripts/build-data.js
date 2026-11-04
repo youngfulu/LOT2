@@ -33,17 +33,22 @@ function parseAboutForIndex(aboutPath) {
   let location = '';
   let city = '';
   let year = '';
-  if (!fs.existsSync(aboutPath)) return { location, city, year };
+  let order = null;
+  if (!fs.existsSync(aboutPath)) return { location, city, year, order };
   const text = fs.readFileSync(aboutPath, 'utf8');
   const locMatch = text.match(/(?:location|Location):\s*\(?([^)\n\r]+)\)?/i);
   const yearMatch = text.match(/(?:year|Year):\s*\(?([^)\n\r]+)\)?/i);
+  // Optional manual tiebreak within a year, e.g. `order: (1)`. Lower sorts first;
+  // projects without one keep the default alphabetical order after those with one.
+  const orderMatch = text.match(/^[ \t]*order:[ \t]*\(?[ \t]*(-?\d+)/im);
   if (locMatch) location = locMatch[1].trim();
   if (yearMatch) year = yearMatch[1].trim();
+  if (orderMatch) order = parseInt(orderMatch[1], 10);
   if (location) {
     // Keep only the first part (usually "City" before the country after comma).
     city = location.split(',')[0].trim().replace(/\.+$/, '');
   }
-  return { location, city, year };
+  return { location, city, year, order };
 }
 
 /** All web images under project folder, with paths relative to project (nested ok). Skips `thumb/` trees. */
@@ -84,7 +89,7 @@ function scanFolders(dir, basePath = '') {
       if (images.length) {
         const aboutPath = path.join(full, 'about.txt');
         images.sort((a, b) => a.localeCompare(b));
-        const { location, city, year } = parseAboutForIndex(aboutPath);
+        const { location, city, year, order } = parseAboutForIndex(aboutPath);
         // Index preview priority:
         // 1) any image whose leaf name starts with "ind_" (nested paths ok)
         // 2) legacy marker "ind_name" in leaf name
@@ -105,6 +110,7 @@ function scanFolders(dir, basePath = '') {
           location,
           city,
           year,
+          order,
           indexImage,
         });
       }

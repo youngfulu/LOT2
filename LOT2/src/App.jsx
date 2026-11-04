@@ -72,6 +72,10 @@ function sortByYear(projects) {
     if (ay === null) return 1;
     if (by === null) return -1;
     if (by !== ay) return by - ay;
+    // Manual `order:` in about.txt wins within a year; the rest stay alphabetical.
+    const ao = Number.isFinite(a.order) ? a.order : Infinity;
+    const bo = Number.isFinite(b.order) ? b.order : Infinity;
+    if (ao !== bo) return ao - bo;
     return a.name.localeCompare(b.name);
   });
 }
