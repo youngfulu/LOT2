@@ -15,8 +15,8 @@
         "poster.jpg",
         "Screenshot 2026-01-03 at 15.54.20.png",
         "TDMovieOut.0.png",
-        "TDMovieOut.10.png",
-        "TDMovieOut.2.png"
+        "TDMovieOut.2.png",
+        "TDMovieOut.10.png"
       ],
       "hasAbout": true,
       "hasMore": true,
@@ -85,8 +85,8 @@
       "name": "Dom Dolla Coachella",
       "rawName": "Dom Dolla Coachella #stage",
       "images": [
-        "34.jpg",
         "3MvEimKw.jpeg",
+        "34.jpg",
         "44.jpg",
         "54.jpg",
         "Coachella.jpg",
@@ -97,8 +97,8 @@
         "nB6q8Rgg.jpeg",
         "U-yCPfrg.jpeg",
         "upscale6.jpeg",
-        "upscaleTDMovieOut.12.jpeg",
-        "upscaleTDMovieOut.4.jpeg"
+        "upscaleTDMovieOut.4.jpeg",
+        "upscaleTDMovieOut.12.jpeg"
       ],
       "hasAbout": true,
       "hasMore": true,
@@ -116,6 +116,7 @@
       "name": "Extrema",
       "rawName": "Extrema  #stage",
       "images": [
+        "8880.jpg",
         "320547899_2990237017948126_3243800018334461643_n.jpg",
         "320629370_818022955968613_1030656669808514981_n.jpg",
         "320686916_669758978159427_4780015944793822764_n.jpg",
@@ -123,10 +124,9 @@
         "323080705_1881136108885951_3399831401371450183_n.jpg",
         "323579819_696825955437089_5888966217247731061_n.jpg",
         "323876631_704630261041234_5887248445516184892_n.jpg",
-        "8880.jpg",
         "ind_322025281_199616095956195_3940761391865284334_n.jpg",
-        "upscale5555.jpeg",
-        "upscale888.jpeg"
+        "upscale888.jpeg",
+        "upscale5555.jpeg"
       ],
       "hasAbout": true,
       "hasMore": false,
@@ -451,9 +451,9 @@
       "name": "Phillaronie de Luxemburg",
       "rawName": "Phillaronie de Luxemburg  #stage",
       "images": [
+        "96.gif",
         "449681302_862376975938475_809333232580353241_n.jpg",
         "449693476_862376902605149_1496274342160015583_n.jpg",
-        "96.gif",
         "ind_lux.jpg"
       ],
       "hasAbout": true,
@@ -548,7 +548,11 @@
         "a3.jpg",
         "a4.jpg",
         "b2.jpg",
-        "b8.jpg"
+        "b3.jpg",
+        "b4.jpg",
+        "b6.jpg",
+        "b8.jpg",
+        "b10.jpg"
       ],
       "hasAbout": true,
       "hasMore": true,
@@ -677,11 +681,11 @@
       "name": "Tower Building",
       "rawName": "Tower Building #spatial #installation",
       "images": [
-        "19.png",
         "2.png",
-        "22.jpg",
         "4.png",
         "5.png",
+        "19.png",
+        "22.jpg",
         "ComfyUI_00008_.png",
         "ComfyUI_00024_.png"
       ],
@@ -695,7 +699,7 @@
       "city": "Moscow",
       "year": "2024",
       "order": null,
-      "indexImage": "19.png"
+      "indexImage": "2.png"
     },
     {
       "path": "Wish Circles #spatial #installation",
