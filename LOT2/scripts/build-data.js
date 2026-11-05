@@ -88,8 +88,7 @@ function scanFolders(dir, basePath = '') {
       const images = collectWebImagesRecursive(full);
       if (images.length) {
         const aboutPath = path.join(full, 'about.txt');
-        // Natural sort, so b2 precedes b10 instead of the other way round.
-        images.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+        images.sort((a, b) => a.localeCompare(b));
         const { location, city, year, order } = parseAboutForIndex(aboutPath);
         // Index preview priority:
         // 1) any image whose leaf name starts with "ind_" (nested paths ok)
